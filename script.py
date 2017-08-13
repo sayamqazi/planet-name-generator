@@ -1,4 +1,3 @@
-from matplotlib import pyplot as plt
 import random
 import time
 
@@ -9,7 +8,6 @@ with open("planets.txt", "r") as f:
 start_time = time.time();
 
 planets = raw.split("\n")
-print("planets : " + str(len(planets)))
 total_syllables = 0
 
 syllables = []
@@ -72,7 +70,3 @@ while num_names < 20:
 
 end_time = time.time()
 print("Completed in : " + str(end_time - start_time)[:6] + "s")
-
-plt.gray()
-plt.imshow(freq, interpolation='nearest')
-plt.show()
